@@ -1,4 +1,7 @@
 name: Android CI/CD
+description: 'An awesome Android CI/CD pipeline for any android project.'
+icon: box
+color: green
 
 on:
   push:
