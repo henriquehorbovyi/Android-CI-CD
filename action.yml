@@ -1,13 +1,16 @@
-name: Android Github Action
+name: Android CI/CD
 
 on:
+  push:
+    branches: 
+     - '*' 
+     - '!master' 
+     - '!release*'
   pull_request:
     branches:
-      - 'master'
-  push:
-    branches:
-      - 'master'
-
+     - '*' 
+     - '!master' 
+     - '!release*'
 jobs:
   test:
     name: Unit Tests
