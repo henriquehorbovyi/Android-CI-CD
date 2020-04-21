@@ -9,8 +9,8 @@ LABEL "repository"="https://github.com/henrikhorbovyi/Android-CI-CD"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Henrique Horbovyi <henrikhorbovyi@gmail.com>"
 
-ADD entrypoint.sh /entrypoint.sh
+ADD setup.sh /setup.sh
 
-RUN chmod +x /entrypoint.sh
+RUN chmod +x /setup.sh
 
-ENTRYPOINT [ "/entrypoint.sh" ]
+ENTRYPOINT [ "/setup.sh" ]
